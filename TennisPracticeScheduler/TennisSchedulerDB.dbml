@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BenedictMetzgerTennisPracticeSchedulerDatabase" Class="TennisSchedulerDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=benedictmetzgertennispracticeschedulerserver.database.windows.net;Initial Catalog=BenedictMetzgerTennisPracticeSchedulerDatabase;User ID=benedib1" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="BenedictMetzgerTennisPracticeSchedulerDatabaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Player" Member="Players">
+    <Type Name="Player">
+      <Column Name="PlayerID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TeamID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
